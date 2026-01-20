@@ -1,12 +1,14 @@
+import java.util.Scanner;
 class star{
-	public static void main(String[] args){
-		int a=10;
-		char b='a';
-		float c=2.5f;
-		boolean d=true;
-		System.out.println("Integer"+a);
-		System.out.println("Charector"+b);
-		System.out.println("Float "+c);
-		System.out.println("Boolean"+d);
+	public static void main(String[]args){
+		Scanner check =new Scanner(System.in);
+		System.out.println("Enter a number");
+		int n=check.nextInt();
+		if(n%2 == 0){
+			System.out.println("Given number is even");
+		}
+		else{
+			System.out.println("Given number is odd");
+		}
 	}
 }
